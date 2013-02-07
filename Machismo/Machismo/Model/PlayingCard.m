@@ -12,6 +12,27 @@
 
 @synthesize  suit = _suit; //because we provide setter and getter
 
+- (int)match:(NSArray *)otherCards
+{
+    int score = 0;
+    
+    //HW1 is making more cards to match.
+    //we can make trail of card to be match either by suit or rank
+    // use stack to store card and as long as they are matching.
+    // 
+    if (otherCards.count == 1) {
+        PlayingCard *otherCard = [otherCards lastObject];
+        if ([otherCard.suit isEqualToString:self.suit]) {
+            score = 1;
+        }else if (otherCard.rank == self.rank){
+            score = 4;
+        }
+    }
+    
+    
+    return score; //if none of above true it returns Zero
+}
+
 - (NSString *)contents
 {
     
