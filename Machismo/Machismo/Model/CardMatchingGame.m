@@ -66,11 +66,15 @@
                     } else {
                         otherCard.faceup = NO;
                         self.score -= MISMATCH_PENALTY;
+                        self.score++; // to compensate the flipCost as player just got panelty
                     }
                     break;
                 }
             }
-            self.score -= FLIP_COST;
+            if(!card.isFaceUp){
+              self.score -= FLIP_COST;  
+            }
+            
         }
         card.faceup = !card.isFaceUp;
     }

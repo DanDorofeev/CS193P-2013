@@ -17,6 +17,7 @@
 @property (strong,nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @end
 
 @implementation CardGameViewController
@@ -48,6 +49,7 @@
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0 ; //changing alpha to 30% if
                                                           //card become unplayable
     }
+    self.statusLabel.text = @"status is updated";
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     
 }
@@ -61,7 +63,12 @@
 - (IBAction)flipCard:(UIButton *)sender
 {
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
-    self.flipCount++;
+   // UIButton *cardButton;
+   // Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
+   // if (!card.isFaceUp) {
+        self.flipCount++; //TODO: flip count should not increase when facing card down
+   // }
+    
     [self updateUI];
     
 }
