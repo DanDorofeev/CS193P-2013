@@ -9,13 +9,14 @@
 #import "CardGameViewController.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
-
+//#import <AudioToolbox/AudioToolbox.h> import audio framwork
 
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UIButton *redealButton;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeButton;
 @property (strong,nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -50,7 +51,8 @@
         
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0 ; //changing alpha to 30% if
                                                           //card become unplayable
-        
+        //AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        //TODO : place holder for single vibration
     }
     self.statusLabel.text = @"status is updated";
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
@@ -77,7 +79,7 @@
 }
 
 
-- (IBAction)redeal:(id)sender
+- (IBAction)redeal:(UIButton *)sender
 
 {
     UIAlertView *redealAlert = [[UIAlertView alloc] initWithTitle:@"Confirmation !"
