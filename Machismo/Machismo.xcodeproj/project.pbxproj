@@ -25,6 +25,7 @@
 		02A2358416C1F11200DBD97C /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2358316C1F11200DBD97C /* PlayingCard.m */; };
 		02A2358716C1F13700DBD97C /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2358616C1F13700DBD97C /* PlayingCardDeck.m */; };
 		02A2358A16C3172400DBD97C /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A2358916C3172400DBD97C /* CardMatchingGame.m */; };
+		02BE9AED16C61A62006FADF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BE9AEC16C61A62006FADF2 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		02A2358616C1F13700DBD97C /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		02A2358816C3172400DBD97C /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		02A2358916C3172400DBD97C /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		02BE9AEC16C61A62006FADF2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02BE9AED16C61A62006FADF2 /* AudioToolbox.framework in Frameworks */,
 				02A2355816C1D76A00DBD97C /* UIKit.framework in Frameworks */,
 				02A2355A16C1D76A00DBD97C /* Foundation.framework in Frameworks */,
 				02A2355C16C1D76A00DBD97C /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		02A2354B16C1D76A00DBD97C = {
 			isa = PBXGroup;
 			children = (
+				02BE9AEC16C61A62006FADF2 /* AudioToolbox.framework */,
 				02A2355D16C1D76A00DBD97C /* Machismo */,
 				02A2355616C1D76A00DBD97C /* Frameworks */,
 				02A2355516C1D76A00DBD97C /* Products */,

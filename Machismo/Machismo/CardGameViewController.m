@@ -9,7 +9,6 @@
 #import "CardGameViewController.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
-//#import <AudioToolbox/AudioToolbox.h> import audio framwork
 
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
@@ -51,8 +50,7 @@
         
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0 ; //changing alpha to 30% if
                                                           //card become unplayable
-        //AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
-        //TODO : place holder for single vibration
+        
     }
     self.statusLabel.text = @"status is updated";
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];

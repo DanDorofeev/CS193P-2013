@@ -6,7 +6,9 @@
 //  Copyright (c) 2013 AC. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h> // added for the vibration when cards match.
 #import "CardMatchingGame.h"
+
 
 @interface CardMatchingGame()
 @property(strong, nonatomic) NSMutableArray *cards;
@@ -63,7 +65,7 @@
                         otherCard.unplayable = YES;
                         card.unplayable = YES;
                         self.score += matchScore * MATCH_BONUS;
-                        
+                        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate); //Vibrate the device upon matching
                         
                     } else {
                         otherCard.faceup = NO;
