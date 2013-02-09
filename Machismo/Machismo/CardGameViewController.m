@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UIButton *redealButton;
 @property (strong,nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -71,6 +72,14 @@
     
     [self updateUI];
     
+}
+
+- (IBAction)redeal:(id)sender
+
+{
+    self.game = nil;
+    self.flipCount = 0;
+    [self updateUI];
 }
 
 @end
