@@ -10,6 +10,7 @@
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
+
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
@@ -49,6 +50,7 @@
         
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0 ; //changing alpha to 30% if
                                                           //card become unplayable
+        
     }
     self.statusLabel.text = @"status is updated";
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
@@ -74,12 +76,29 @@
     
 }
 
+
 - (IBAction)redeal:(id)sender
 
 {
-    self.game = nil;
-    self.flipCount = 0;
-    [self updateUI];
+    UIAlertView *redealAlert = [[UIAlertView alloc] initWithTitle:@"Confirmation !"
+                                                          message:@"Do you want to reset game?"
+                                                         delegate:self
+                                                cancelButtonTitle:@"No"
+                                                otherButtonTitles:@"Yes", nil];
+    [redealAlert show];
+    
 }
+
+-(void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != 0)
+    {
+        self.game = nil;
+        self.flipCount = 0;
+        [self updateUI];
+    }
+}
+
 
 @end
