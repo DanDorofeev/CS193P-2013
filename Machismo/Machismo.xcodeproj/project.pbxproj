@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0297B0ED16C5DEF300EB02F8 /* Crystal_package_games_card-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 0297B0EC16C5DEF300EB02F8 /* Crystal_package_games_card-57.png */; };
+		0297B0EF16C5DF2000EB02F8 /* Crystal_package_games_card_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 0297B0EE16C5DF2000EB02F8 /* Crystal_package_games_card_114.png */; };
 		02A2355816C1D76A00DBD97C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A2355716C1D76A00DBD97C /* UIKit.framework */; };
 		02A2355A16C1D76A00DBD97C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A2355916C1D76A00DBD97C /* Foundation.framework */; };
 		02A2355C16C1D76A00DBD97C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A2355B16C1D76A00DBD97C /* CoreGraphics.framework */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0297B0EC16C5DEF300EB02F8 /* Crystal_package_games_card-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Crystal_package_games_card-57.png"; path = "../Crystal_package_games_card-57.png"; sourceTree = "<group>"; };
+		0297B0EE16C5DF2000EB02F8 /* Crystal_package_games_card_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Crystal_package_games_card_114.png; path = ../Crystal_package_games_card_114.png; sourceTree = "<group>"; };
 		02A2355416C1D76A00DBD97C /* Machismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Machismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A2355716C1D76A00DBD97C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02A2355916C1D76A00DBD97C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +114,8 @@
 		02A2355E16C1D76A00DBD97C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0297B0EE16C5DF2000EB02F8 /* Crystal_package_games_card_114.png */,
+				0297B0EC16C5DEF300EB02F8 /* Crystal_package_games_card-57.png */,
 				02A2356616C1D76A00DBD97C /* CardGameAppDelegate.h */,
 				02A2356716C1D76A00DBD97C /* CardGameAppDelegate.m */,
 				02A2355F16C1D76A00DBD97C /* Machismo-Info.plist */,
@@ -197,6 +203,8 @@
 				02A2356C16C1D76A00DBD97C /* Default@2x.png in Resources */,
 				02A2356E16C1D76A00DBD97C /* Default-568h@2x.png in Resources */,
 				02A2357116C1D76A00DBD97C /* MainStoryboard.storyboard in Resources */,
+				0297B0ED16C5DEF300EB02F8 /* Crystal_package_games_card-57.png in Resources */,
+				0297B0EF16C5DF2000EB02F8 /* Crystal_package_games_card_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +345,7 @@
 				02A2357916C1D76A00DBD97C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

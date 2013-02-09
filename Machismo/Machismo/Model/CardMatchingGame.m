@@ -63,6 +63,7 @@
                         otherCard.unplayable = YES;
                         card.unplayable = YES;
                         self.score += matchScore * MATCH_BONUS;
+                        
                     } else {
                         otherCard.faceup = NO;
                         self.score -= MISMATCH_PENALTY;
